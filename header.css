@@ -1,0 +1,35 @@
+header {
+  background-color: cornsilk;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+}
+#hamburger-button {
+  height: 75px;
+  width: 75px;
+}
+header > nav {
+  margin: 10px;
+}
+
+@media (max-width: 350px) {
+  header > nav {
+    display: none;
+  }
+  #hamburger-button {
+    display: initial;
+  }
+}
+
+@media (max-width: 200px) {
+  header {
+    flex-direction: column;
+  }
+}
